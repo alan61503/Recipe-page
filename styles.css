@@ -1,60 +1,166 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 20px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  header h1 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  header p {
-    font-size: 1rem;
-    color: #555;
-  }
-  
-  h2 {
-    color: #444;
-    margin-bottom: 10px;
-  }
-  
-  ul,
-  ol {
-    margin: 10px 0;
-    padding-left: 20px;
-  }
-  
-  li {
-    margin-bottom: 10px;
-  }
-  
-  footer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.875rem;
-    color: #777;
-  }
-  
-  footer a {
-    color: #0066cc;
-    text-decoration: none;
-  }
-  
-  footer a:hover {
-    text-decoration: underline;
-  }
-  
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f5ee;
+  color: #3e3e3e;
+}
+
+.recipe-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.recipe-container:hover {
+  transform: scale(1.02);
+}
+
+.recipe-image {
+  width: 90%;
+  border-radius: 10px;
+  height: auto;
+  display:flex;
+  margin-top: 40px;
+}
+
+.recipe-content {
+  padding: 30px;
+}
+.prep-time {
+  background-color: #f8eff2; /* Light pink color */
+  padding: 30px; /* Adds spacing inside the container */
+  border-radius: 8px; /* Rounds the corners */
+  max-width: 600px; /* Optional: limits the width of the container */
+  margin: 0 auto; /* Centers the container horizontally */
+}
+
+.prep-time h2 {
+  text-align: center; /* Centers the heading */
+}
+
+.prep-time ul {
+  list-style-type: none; /* Removes bullet points */
+  padding-left: 0; /* Removes padding from left */
+}
+
+.prep-time li {
+  margin-bottom: 10px; /* Adds space between list items */
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #2c2c2c;
+  margin-bottom: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.description {
+  font-size: 1.0rem;
+  margin-bottom: 24px;
+  line-height: 1.8;
+  text-align: justify;
+  color: #5a5a5a;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  color: #844747;
+  border-bottom: 2px solid #e7dac9;
+  padding-bottom: 4px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 24px;
+}
+
+ul li::before {
+  content: '\2022';
+  color: #e7dac9;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+ol {
+  margin: 0;
+  padding-left: 24px;
+}
+
+ol li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.ingredient, .nutrition {
+  margin-bottom: 24px;
+}
+
+.nutrition {
+  margin-bottom: 24px;
+}
+
+.nutrition p {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #5a5a5a;
+}
+
+.nutrition table {
+  width: 150%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.nutrition table tr {
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.nutrition table td {
+  font-size: 1rem;
+  padding: 15px;
+  color: #3e3e3e;
+}
+
+.nutrition table td, th {
+  padding: 20px 60px; /* 20px top/bottom, 40px left/right */
+}
+
+.nutrition table td:first-child {
+  font-weight: bold;
+  color: #2c2c2c;text-align: left;
+
+}
+
+.nutrition table td:last-child {
+  color: #b34700; /* Adjust this color for the emphasis */
+  text-align: center;
+}
+
+.nutrition {
+  margin: 0; /* Remove container margin */
+  padding: 0; /* Remove container padding */
+  width: 100%; /* Ensure container takes full page width */
+}
