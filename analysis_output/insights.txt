@@ -1,0 +1,13 @@
+Rows analyzed: 10837
+High-value threshold (90th percentile of composite_z_index): 0.775
+Top 5% cutoff (composite_z_index): 0.961
+Segment distribution: {'baseline': 9753, 'top_5%': 542, 'top_10%': 542}
+Top 5 rows in top_5% segment (first 5):
+ col_1  col_2  col_3  col_4  col_5  col_6  composite_z_index  composite_weighted_index segment  cluster
+ 787.0  19278 1763.0  405.0      5      6           1.217277                       0.0  top_5%        0
+ 162.0  20350 1549.0  411.0     10     10           1.176889                       0.0  top_5%        0
+ 316.0  23850  688.0  431.0     17     11           0.981158                       0.0  top_5%        0
+  20.0  21738 1679.0  349.0     17      2           1.161685                       0.0  top_5%        0
+ 882.0  17706 1090.0  487.0     19      4           1.046748                       0.0  top_5%        0
+Cluster sizes (potential monetizable groups): {1: 4996, 0: 4944, 3: 861, 2: 36}
+High-value clusters by composite_z_index: [0, 1]
